@@ -26,22 +26,6 @@ function shuffle( array ) {
   return array;
 }
 
-function RepoImgs( props ) {
-  return (
-    <div className="triptych border--round">
-      {props
-        .repos
-        .map( function( repo, index ) {
-          return (
-            <a href={repo.html_url}>
-              <img key={repo.name} src={repo.owner.avatar_url} alt={'Avatar for' + repo.owner.login} />
-            </a>
-          )
-        })}
-    </div>
-  )
-}
-
 class Home extends Component {
   constructor( props ) {
     super( props );
@@ -63,7 +47,6 @@ class Home extends Component {
       }.bind( this ) );
   }
   render() {
-    console.log( this.state.repos );
     return (
       <section className="cover cover height-100 text-center">
         <div className="container">
@@ -93,7 +76,7 @@ class Home extends Component {
                     .slice(0, 3)
                     .map( function( repo, index ) {
                         return (
-                          <img key={repo.name} src={repo.owner.avatar_url} alt={'Avatar for' + repo.owner.login} />
+                          <img key={repo.name} src={repo.owner.avatar_url} alt={'Avatar for' + repo.owner.login} style={{backgroundColor: '#ffffff'}} />
                         )
                     })}
                   </div>
