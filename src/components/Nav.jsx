@@ -1,5 +1,8 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import {
+  Link,
+  NavLink
+} from 'react-router-dom';
 
 function Nav( props ) {
   return (
@@ -11,7 +14,7 @@ function Nav( props ) {
           <div className="row">
             <div className="col-xs-1">
               <div className="bar__module">
-                <a href="index.html">
+                <Link to="/">
                   <img
                     className="logo logo-dark"
                     alt="logo"
@@ -20,7 +23,7 @@ function Nav( props ) {
                     className="logo logo-light"
                     alt="logo"
                     src={props.logo} />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-md-10 col-xs-12 text-center">
