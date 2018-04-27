@@ -53,7 +53,7 @@ class Home extends Component {
           <div className="row">
             <div className="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
               <h1>
-                Github Battle
+                Github Battle 2
               </h1>
               <p className="lead">
                 Test your skills, battling it out with your fellow githubbers. Prepare for death or glory!
